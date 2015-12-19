@@ -12,6 +12,7 @@
  *-------------------------------------------------------------------------
  */
 #include <stdio.h>
+#include <stdlib.h>
 
 int Noversion = 0;
 char *DataDir = (char *) NULL;

@@ -13,6 +13,9 @@
 ifndef MK_PORT
 MK_PORT=	linux
 
+CFLAGS+=-m32
+LDFLAGS+=-m32
+
 # Comment the following flag if you're not using Linux ELF
 LINUX_ELF = 1
 
