@@ -50,7 +50,8 @@ elog(int lev, char *fmt, ... )
     extern	int	errno, sys_nerr;
 #if !defined(PORTNAME_BSD44_derived) && \
     !defined(PORTNAME_bsdi) && \
-    !defined(PORTNAME_bsdi_2_1)
+    !defined(PORTNAME_bsdi_2_1) && \
+    !defined(PORTNAME_linux)
     extern	char	*sys_errlist[];
 #endif /* bsd derived */
 #ifndef PG_STANDALONE

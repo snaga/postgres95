@@ -251,6 +251,16 @@ typedef enum _LockId_ {
 
 #endif /* HAS_TEST_AND_SET */
 
+#if defined(PORTNAME_linux)
+union semun {
+  int              val;    /* Value for SETVAL */
+  struct semid_ds *buf;    /* Buffer for IPC_STAT, IPC_SET */
+  unsigned short  *array;  /* Array for GETALL, SETALL */
+  struct seminfo  *__buf;  /* Buffer for IPC_INFO
+			      (Linux-specific) */
+};
+#endif /* linux */
+
 /*
  * the following are originally in ipci.h but the prototypes have circular
  * dependencies and most files include both ipci.h and ipc.h anyway, hence

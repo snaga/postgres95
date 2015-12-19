@@ -60,15 +60,15 @@
 #  make sure that you have no whitespaces after the PORTNAME setting
 #  or the makefiles can get confused
 # 
-PORTNAME=	BSD44_derived
+PORTNAME=	linux
 
 # SRCDIR specifies where the source files are. 
-SRCDIR=		/home/tools/postgres95-1.02/src
+SRCDIR=		/home/snaga/pgsql/postgres95/src
 
 # For convenience, POSTGRESDIR is where DATADIR, BINDIR, and LIBDIR 
 # and other target destinations are rooted.  Of course, each of these is 
 # changable separately. 
-POSTGRESDIR=	/home/tools/postgres95-1.02
+POSTGRESDIR=	/home/snaga/pgsql/postgres95
 
 # POSTGRESLOGIN is the login name of the user who gets special
 # privileges within the database.  By default it is "postgres", but

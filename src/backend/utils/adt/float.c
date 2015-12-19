@@ -87,7 +87,7 @@ extern double   rint(double x);
 #define isinf my_isinf
 static int	isinf(double x);
 #else /* NEED_ISINF */
-extern int	isinf(double x);
+/* extern int	isinf(double x); */
 #endif /* NEED_ISINF */
 
 #endif 
